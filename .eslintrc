@@ -1,0 +1,12 @@
+{
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "extends": ["airbnb-base", "prettier", "eslint:recommended"],
+  "plugins": ["import", "prettier"],
+  "rules": {
+    "no-console": "off",
+    "semi": "error"
+  }
+}
