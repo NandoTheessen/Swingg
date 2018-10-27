@@ -8,7 +8,7 @@ exports.up = function(knex, Promise) {
     tbl
       .integer('collection')
       .unsigned()
-      .references('collection.id');
+      .references('collections.id');
   });
 };
 

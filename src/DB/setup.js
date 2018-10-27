@@ -2,5 +2,5 @@ const knex = require('knex');
 const config = require('../../knexfile');
 
 module.exports = {
-  db: knex(config.development),
+  db: knex(config['development']),
 };

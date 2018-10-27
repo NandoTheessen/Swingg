@@ -20,7 +20,8 @@
   "homepage": "https://github.com/NandoTheessen/Swingg#readme",
   "devDependencies": {
     "jest": "^23.6.0",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "sqlite3": "^4.0.3"
   },
   "dependencies": {
     "bcrypt": "^3.0.2",

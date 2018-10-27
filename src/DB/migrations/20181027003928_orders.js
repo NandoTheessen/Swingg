@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
     tbl
       .integer('customer')
       .unsigned()
-      .references(customer.id);
+      .references('customers.id');
 
     tbl.timestamps('Date');
   });
