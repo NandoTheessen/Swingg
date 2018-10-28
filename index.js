@@ -1,11 +1,12 @@
-const express = require('express');
-const server = express();
-const PORT = process.PORT || 5555;
-const morgan = require('morgan');
+const server = require('./App');
+const { PORT } = process.env;
 
-server.use(express.json());
-server.use(morgan('short'));
+server.get('/', (req, res) => {
+  res.send('api: running');
+});
 
-server.listen(PORT, async () => {
-  console.log(`Server is listening on port ${PORT}`);
+const port = PORT || 5000;
+
+server.listen(port, async () => {
+  console.log(`Server is listening on port ${port}`);
 });
