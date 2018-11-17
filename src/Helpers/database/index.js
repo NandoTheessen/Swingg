@@ -51,6 +51,6 @@ const DataAccessObject = (() => {
       return instance;
     },
   };
-})();
+})();  
 
 module.exports = DataAccessObject.getInstance();
