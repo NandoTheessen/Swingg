@@ -47,7 +47,7 @@ const DataAccessObject = (() => {
     getInstance: () => {
       if (!instance) {
         instance = createInstance();
-      }
+      } 
       return instance;
     },
   };
