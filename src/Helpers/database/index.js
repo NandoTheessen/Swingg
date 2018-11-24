@@ -47,10 +47,10 @@ const DataAccessObject = (() => {
     getInstance: () => {
       if (!instance) {
         instance = createInstance();
-      }
+      } 
       return instance;
     },
   };
-})();
+})();   
 
 module.exports = DataAccessObject.getInstance();
